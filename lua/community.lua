@@ -12,6 +12,8 @@ return {
   { import = "astrocommunity/editing-support/zen-mode-nvim" },
   { import = "astrocommunity/markdown-and-latex/markdown-preview-nvim" },
   { import = "astrocommunity/programming-language-support/csv-vim" },
-
+  { import = "astrocommunity/pack/python" },
+  { import = "astrocommunity/syntax/vim-cool" },
+  { import = "astrocommunity.colorscheme.catppuccin" },
   -- import/override with your plugins folder
 }

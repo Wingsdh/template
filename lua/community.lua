@@ -15,5 +15,6 @@ return {
   { import = "astrocommunity/pack/python" },
   { import = "astrocommunity/syntax/vim-cool" },
   { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity/completion/copilot-lua-cmp" },
   -- import/override with your plugins folder
 }

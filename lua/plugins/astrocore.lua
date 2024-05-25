@@ -21,6 +21,7 @@ return {
     },
     -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
     diagnostics = {
+      update_in_insert = false,
       virtual_text = true,
       underline = true,
     },

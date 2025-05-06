@@ -17,5 +17,3 @@ end
 
 require "lazy_setup"
 require "polish"
-
-vim.g.augment_workspace_folders = { "/Users/handeng/Code/backend/leto" }

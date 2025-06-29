@@ -38,6 +38,10 @@ return {
         -- configure global vim variables (vim.g)
         -- NOTE: `mapleader` and `maplocalleader` must be set in the AstroNvim opts or before `lazy.setup`
         -- This can be found in the `lua/lazy_setup.lua` file
+        augment_disable_completions = false, -- 启用补全功能
+        augment_disable_tab_mapping = false, -- 启用默认Tab键映射
+        -- 可选：设置工作目录（根据你的项目调整路径）
+        -- augment_workspace_folders = {'/Users/handeng/projects/your-project'},
       },
     },
     -- Mappings can be configured through AstroCore as well.
@@ -67,6 +71,14 @@ return {
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
+      },
+      i = {
+        -- Insert 模式下的快捷键
+        -- 使用 Ctrl-Y 接受 Augment 建议
+        ["<C-y>"] = { "<cmd>call augment#Accept()<CR>", desc = "Accept Augment suggestion" },
+
+        -- 如果你想使用 Enter 接受建议（可选，可能会干扰正常的回车键）
+        -- ["<CR>"] = { "<cmd>call augment#Accept(\"\\n\")<CR>", desc = "Accept suggestion or newline" },
       },
     },
   },

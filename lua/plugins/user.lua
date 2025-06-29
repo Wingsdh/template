@@ -82,4 +82,6 @@ return {
       )
     end,
   },
+  -- Augment.vim 插件
+  { "augmentcode/augment.vim" },
 }
